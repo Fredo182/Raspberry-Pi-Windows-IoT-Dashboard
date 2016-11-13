@@ -1,0 +1,251 @@
+﻿<Page
+    x:Class="Dashboard.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Dashboard"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Height="768" Width="1366" >
+
+    <Grid Name="Weather" Height="Auto" Width="Auto" >
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/orange.jpg" />
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".2*" />
+            <RowDefinition Height="1.5*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height=".2*" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <TextBlock Text="Thursday November 12, 2016" TextAlignment="Right" Margin="0 0 50 0" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="45" Foreground="White" ></TextBlock>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.4*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width=".8*" />
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height=".6*" />
+                        <RowDefinition Height="1.8*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height=".4*" />
+                        <RowDefinition Height=".4*" />
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Text="Fort Worth" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="55" Foreground="White" ></TextBlock>
+                    <TextBlock Grid.Row="1" Text="" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="125" Foreground="White" ></TextBlock>
+                    <TextBlock Grid.Row="2" Text="46°F" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="90" Foreground="White" ></TextBlock>
+                    <TextBlock Grid.Row="3" Text="Scattered Thunderstorms" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="35" Foreground="White" ></TextBlock>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text=" Chill:" TextAlignment="Left" Margin="30 0 0 0" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="25" Foreground="White" ></TextBlock>
+                        <TextBlock Grid.Column="1" Text="36°F" TextAlignment="Left" Margin="10 0 0 0" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="25" Foreground="White" ></TextBlock>
+                    </Grid>
+                    <Grid Grid.Row="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text=" Wind:" TextAlignment="Left" Margin="30 0 0 0" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="25" Foreground="White" ></TextBlock>
+                        <TextBlock Grid.Column="1" Text="18 mph" TextAlignment="Left" Margin="10 0 0 0" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="25" Foreground="White" ></TextBlock>
+                    </Grid>
+                    <Grid Grid.Row="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text=" Humidity:" TextAlignment="Left" Margin="30 0 0 0" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="25" Foreground="White" ></TextBlock>
+                        <TextBlock Grid.Column="1" Text="73%" TextAlignment="Left" Margin="10 0 0 0" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="25" Foreground="White" ></TextBlock>
+                    </Grid>
+                    <Grid Grid.Row="4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text=" Pressure:" TextAlignment="Left" Margin="30 0 0 0" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="25" Foreground="White" ></TextBlock>
+                        <TextBlock Grid.Column="1" Text="1003.0 in" TextAlignment="Left" Margin="10 0 0 0" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="25" Foreground="White" ></TextBlock>
+                    </Grid>
+                    <Grid Grid.Row="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text=" Sunrise:" TextAlignment="Left" Margin="30 0 0 0" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="25" Foreground="White" ></TextBlock>
+                        <TextBlock Grid.Column="1" Text="6:37 am" TextAlignment="Left" Margin="10 0 0 0" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="25" Foreground="White" ></TextBlock>
+                    </Grid>
+                    <Grid Grid.Row="6">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text=" Sunset:" TextAlignment="Left" Margin="30 0 0 0" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="25" Foreground="White" ></TextBlock>
+                        <TextBlock Grid.Column="1" Text="4:32 pm" TextAlignment="Left" Margin="10 0 0 0" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="25" Foreground="White" ></TextBlock>
+                    </Grid>
+                    <Grid Grid.Row="7">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text=" Updated:" TextAlignment="Left" Margin="30 0 0 0" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="25" Foreground="White" ></TextBlock>
+                        <TextBlock Grid.Column="1" Text="12:03 am" TextAlignment="Left" Margin="10 0 0 0" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="25" Foreground="White" ></TextBlock>
+                    </Grid>
+
+                </Grid>
+                
+            </Grid>
+            <Grid Grid.Column="1">
+                <!-- insert map here or something -->
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            
+            <!-- Day 1-->
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".5*" />
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height=".4*" />
+                    <RowDefinition Height=".6*" />
+                    <RowDefinition Height=".6*" />
+                    <RowDefinition Height=".2*" />
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Text="Thursday" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="30" Foreground="White" ></TextBlock>
+                <TextBlock Grid.Row="1" Text="" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="65" Foreground="White" ></TextBlock>
+                <TextBlock Grid.Row="2" Text="Partly Cloudy" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="16" Foreground="White" ></TextBlock>
+                <TextBlock Grid.Row="3" Text="75°F" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="45" Foreground="White" ></TextBlock>
+                <TextBlock Grid.Row="4" Text="45°F" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="35" Foreground="#FFB2C0FF" ></TextBlock>
+            </Grid>
+            <!-- Day 1-->
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".5*" />
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height=".4*" />
+                    <RowDefinition Height=".6*" />
+                    <RowDefinition Height=".6*" />
+                    <RowDefinition Height=".2*" />
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Text="Friday" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="30" Foreground="White" ></TextBlock>
+                <TextBlock Grid.Row="1" Text="" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="65" Foreground="White" ></TextBlock>
+                <TextBlock Grid.Row="2" Text="Partly Cloudy" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="16" Foreground="White" ></TextBlock>
+                <TextBlock Grid.Row="3" Text="75°F" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="45" Foreground="White" ></TextBlock>
+                <TextBlock Grid.Row="4" Text="45°F" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="35" Foreground="#FFB2C0FF" ></TextBlock>
+            </Grid>
+            <!-- Day 1-->
+            <Grid Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".5*" />
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height=".4*" />
+                    <RowDefinition Height=".6*" />
+                    <RowDefinition Height=".6*" />
+                    <RowDefinition Height=".2*" />
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Text="Saturday" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="30" Foreground="White" ></TextBlock>
+                <TextBlock Grid.Row="1" Text="" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="65" Foreground="White" ></TextBlock>
+                <TextBlock Grid.Row="2" Text="Partly Cloudy" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="16" Foreground="White" ></TextBlock>
+                <TextBlock Grid.Row="3" Text="75°F" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="45" Foreground="White" ></TextBlock>
+                <TextBlock Grid.Row="4" Text="45°F" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="35" Foreground="#FFB2C0FF" ></TextBlock>
+            </Grid>
+            <!-- Day 1-->
+            <Grid Grid.Column="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".5*" />
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height=".4*" />
+                    <RowDefinition Height=".6*" />
+                    <RowDefinition Height=".6*" />
+                    <RowDefinition Height=".2*" />
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Text="Sunday" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="30" Foreground="White" ></TextBlock>
+                <TextBlock Grid.Row="1" Text="" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="65" Foreground="White" ></TextBlock>
+                <TextBlock Grid.Row="2" Text="Partly Cloudy" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="16" Foreground="White" ></TextBlock>
+                <TextBlock Grid.Row="3" Text="75°F" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="45" Foreground="White" ></TextBlock>
+                <TextBlock Grid.Row="4" Text="45°F" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="35" Foreground="#FFB2C0FF" ></TextBlock>
+            </Grid>
+            <!-- Day 1-->
+            <Grid Grid.Column="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".5*" />
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height=".4*" />
+                    <RowDefinition Height=".6*" />
+                    <RowDefinition Height=".6*" />
+                    <RowDefinition Height=".2*" />
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Text="Monday" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="30" Foreground="White" ></TextBlock>
+                <TextBlock Grid.Row="1" Text="" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="65" Foreground="White" ></TextBlock>
+                <TextBlock Grid.Row="2" Text="Partly Cloudy" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="16" Foreground="White" ></TextBlock>
+                <TextBlock Grid.Row="3" Text="75°F" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="45" Foreground="White" ></TextBlock>
+                <TextBlock Grid.Row="4" Text="45°F" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="35" Foreground="#FFB2C0FF" ></TextBlock>
+            </Grid>
+            <!-- Day 1-->
+            <Grid Grid.Column="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".5*" />
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height=".4*" />
+                    <RowDefinition Height=".6*" />
+                    <RowDefinition Height=".6*" />
+                    <RowDefinition Height=".2*" />
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Text="Tuesday" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="30" Foreground="White" ></TextBlock>
+                <TextBlock Grid.Row="1" Text="" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="65" Foreground="White" ></TextBlock>
+                <TextBlock Grid.Row="2" Text="Partly Cloudy" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="16" Foreground="White" ></TextBlock>
+                <TextBlock Grid.Row="3" Text="75°F" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="45" Foreground="White" ></TextBlock>
+                <TextBlock Grid.Row="4" Text="45°F" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="35" Foreground="#FFB2C0FF" ></TextBlock>
+            </Grid>
+            <!-- Day 1-->
+            <Grid Grid.Column="6">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".5*" />
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height=".4*" />
+                    <RowDefinition Height=".6*" />
+                    <RowDefinition Height=".6*" />
+                    <RowDefinition Height=".2*" />
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Text="Thursday" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="30" Foreground="White" ></TextBlock>
+                <TextBlock Grid.Row="1" Text="" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="65" Foreground="White" ></TextBlock>
+                <TextBlock Grid.Row="2" Text="Partly Cloudy" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="16" Foreground="White" ></TextBlock>
+                <TextBlock Grid.Row="3" Text="75°F" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="45" Foreground="White" ></TextBlock>
+                <TextBlock Grid.Row="4" Text="45°F" TextAlignment="Center" VerticalAlignment="Center" FontFamily="pack://application:,,,/Assets/weather.ttf#Weather Icons" FontSize="35" Foreground="#FFB2C0FF" ></TextBlock>
+            </Grid>
+            
+            
+        </Grid>
+
+    </Grid>
+</Page>
