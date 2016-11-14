@@ -122,7 +122,7 @@ namespace Dashboard.Classes
     }
 
     [DataContract]
-    class YahooData
+    class YahooWeatherData
     {
         [DataMember(Name = "units", IsRequired = true)]
         public Units units;
@@ -148,7 +148,7 @@ namespace Dashboard.Classes
     class YahooWeatherResult
     {
         [DataMember(Name = "channel", IsRequired = true)]
-        public YahooData data;
+        public YahooWeatherData data;
 
     }
 
@@ -184,7 +184,7 @@ namespace Dashboard.Classes
             try
             {
                 string baseUrl = "http://query.yahooapis.com/v1/public/yql";
-                string yqlQuery = "select * from weather.forecast where woeid in (select woeid from geo.places(1) where text='chicago, il')";
+                string yqlQuery = "select * from weather.forecast where woeid in (select woeid from geo.places(1) where text='fort worth, tx')";
                 string yqlQueryUrl = baseUrl + "?q=" + Uri.EscapeDataString(yqlQuery) + "&format=json";
                 var client = new HttpClient();
                 var response = await client.GetAsync(yqlQueryUrl);
