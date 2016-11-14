@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Traffic layer</title>
+    <style>
+         /* Always set the map height explicitly to define the size of the div
+        * element that contains the map. */
+         #map {
+             height: 100%;
+         }
+         /* Optional: Makes the sample page fill the window. */
+         html, body {
+             height: 100%;
+             margin: 0;
+             padding: 0;
+         }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 13,
+          center: {lat: [LAT], lng: [LON]}
+          //center: { lat: 34.0007, lng: -81.0348 }
+        });
+
+        var timestamps = ['900913-m50m', '900913-m45m', '900913-m40m', '900913-m35m', '900913-m30m', '900913-m25m', '900913-m20m', '900913-m15m', '900913-m10m', '900913-m05m', '900913']
+       
+
+        tileNEX = new google.maps.ImageMapType({
+            getTileUrl: function (tile, zoom) {
+                return "https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/nexrad-n0q-" + timestamps[0] + "/" + zoom + "/" + tile.x + "/" + tile.y + ".png?" + (new Date()).getTime();
+            },
+            tileSize: new google.maps.Size(256, 256),
+            opacity: 0.00,
+            name: 'NEXRAD',
+            isPng: true
+        });
+        map.overlayMapTypes.push(tileNEX);
+
+        tileNEX = new google.maps.ImageMapType({
+            getTileUrl: function (tile, zoom) {
+                return "https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/nexrad-n0q-" + timestamps[1] + "/" + zoom + "/" + tile.x + "/" + tile.y + ".png?" + (new Date()).getTime();
+            },
+            tileSize: new google.maps.Size(256, 256),
+            opacity: 0.00,
+            name: 'NEXRAD',
+            isPng: true
+        });
+        map.overlayMapTypes.push(tileNEX);
+
+        tileNEX = new google.maps.ImageMapType({
+            getTileUrl: function (tile, zoom) {
+                return "https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/nexrad-n0q-" + timestamps[2] + "/" + zoom + "/" + tile.x + "/" + tile.y + ".png?" + (new Date()).getTime();
+            },
+            tileSize: new google.maps.Size(256, 256),
+            opacity: 0.00,
+            name: 'NEXRAD',
+            isPng: true
+        });
+        map.overlayMapTypes.push(tileNEX);
+
+        tileNEX = new google.maps.ImageMapType({
+            getTileUrl: function (tile, zoom) {
+                return "https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/nexrad-n0q-" + timestamps[3] + "/" + zoom + "/" + tile.x + "/" + tile.y + ".png?" + (new Date()).getTime();
+            },
+            tileSize: new google.maps.Size(256, 256),
+            opacity: 0.00,
+            name: 'NEXRAD',
+            isPng: true
+        });
+        map.overlayMapTypes.push(tileNEX);
+
+        tileNEX = new google.maps.ImageMapType({
+            getTileUrl: function (tile, zoom) {
+                return "https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/nexrad-n0q-" + timestamps[4] + "/" + zoom + "/" + tile.x + "/" + tile.y + ".png?" + (new Date()).getTime();
+            },
+            tileSize: new google.maps.Size(256, 256),
+            opacity: 0.00,
+            name: 'NEXRAD',
+            isPng: true
+        });
+        map.overlayMapTypes.push(tileNEX);
+
+        tileNEX = new google.maps.ImageMapType({
+            getTileUrl: function (tile, zoom) {
+                return "https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/nexrad-n0q-" + timestamps[5] + "/" + zoom + "/" + tile.x + "/" + tile.y + ".png?" + (new Date()).getTime();
+            },
+            tileSize: new google.maps.Size(256, 256),
+            opacity: 0.00,
+            name: 'NEXRAD',
+            isPng: true
+        });
+        map.overlayMapTypes.push(tileNEX);
+
+        tileNEX = new google.maps.ImageMapType({
+            getTileUrl: function (tile, zoom) {
+                return "https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/nexrad-n0q-" + timestamps[6] + "/" + zoom + "/" + tile.x + "/" + tile.y + ".png?" + (new Date()).getTime();
+            },
+            tileSize: new google.maps.Size(256, 256),
+            opacity: 0.00,
+            name: 'NEXRAD',
+            isPng: true
+        });
+        map.overlayMapTypes.push(tileNEX);
+
+        tileNEX = new google.maps.ImageMapType({
+            getTileUrl: function (tile, zoom) {
+                return "https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/nexrad-n0q-" + timestamps[7] + "/" + zoom + "/" + tile.x + "/" + tile.y + ".png?" + (new Date()).getTime();
+            },
+            tileSize: new google.maps.Size(256, 256),
+            opacity: 0.00,
+            name: 'NEXRAD',
+            isPng: true
+        });
+        map.overlayMapTypes.push(tileNEX);
+
+        tileNEX = new google.maps.ImageMapType({
+            getTileUrl: function (tile, zoom) {
+                return "https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/nexrad-n0q-" + timestamps[8] + "/" + zoom + "/" + tile.x + "/" + tile.y + ".png?" + (new Date()).getTime();
+            },
+            tileSize: new google.maps.Size(256, 256),
+            opacity: 0.00,
+            name: 'NEXRAD',
+            isPng: true
+        });
+        map.overlayMapTypes.push(tileNEX);
+
+        tileNEX = new google.maps.ImageMapType({
+            getTileUrl: function (tile, zoom) {
+                return "https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/nexrad-n0q-" + timestamps[9] + "/" + zoom + "/" + tile.x + "/" + tile.y + ".png?" + (new Date()).getTime();
+            },
+            tileSize: new google.maps.Size(256, 256),
+            opacity: 0.00,
+            name: 'NEXRAD',
+            isPng: true
+        });
+        map.overlayMapTypes.push(tileNEX);
+
+        tileNEX = new google.maps.ImageMapType({
+            getTileUrl: function (tile, zoom) {
+                return "https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/nexrad-n0q-" + timestamps[10] + "/" + zoom + "/" + tile.x + "/" + tile.y + ".png?" + (new Date()).getTime();
+            },
+            tileSize: new google.maps.Size(256, 256),
+            opacity: 0.00,
+            name: 'NEXRAD',
+            isPng: true
+        });
+        map.overlayMapTypes.push(tileNEX);
+
+
+
+        //map.overlayMapTypes.getAt(0).setOpacity(.6);
+
+        animateRadar();
+
+        function animateRadar() {
+            var index = 0;
+
+            window.setInterval(function () {
+                if (index > 0) {
+                    map.overlayMapTypes.getAt(index - 1).setOpacity(0);
+                }
+                else {
+                    map.overlayMapTypes.getAt(map.overlayMapTypes.length - 1).setOpacity(0);
+                }
+
+                if (index >= map.overlayMapTypes.length)
+                    index = 0;
+                
+                console.log(index);
+                map.overlayMapTypes.getAt(index).setOpacity(1);
+                index++;
+            }, 400);
+        }
+        
+        
+      }
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhYGTTyCe9HviszyCnEyvZuN8zOZ91tb0&callback=initMap">
+    </script>
+</body>
+</html>

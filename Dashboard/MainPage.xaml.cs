@@ -20,6 +20,8 @@ using Dashboard.Classes;
 using System.Dynamic;
 using System.Runtime.Serialization.Json;
 using Dashboard.Models;
+using Windows.ApplicationModel;
+using Windows.Storage;
 
 
 
@@ -37,8 +39,6 @@ namespace Dashboard
         {
             this.InitializeComponent();
             GetWeather();
-
-           
         }
 
 
@@ -46,12 +46,19 @@ namespace Dashboard
         {
             YahooWeatherResponse rsp = await YahooWeather.getWeather();
 
-            //this.test.Text = YahooWeatherCodes.getString(rsp.query.results.data.weather.condition.code);
 
-            Debug.WriteLine(rsp.query.results.data.location.city);
-
+            loadRadarMap(rsp.query.results.data.weather.latitude, rsp.query.results.data.weather.longitude);
 
 
+
+        }
+
+        private async void loadRadarMap(string lat, string lon)
+        {
+            StorageFile file = await Package.Current.InstalledLocation.GetFileAsync(@"Html\map.html");
+            string html = await FileIO.ReadTextAsync(file);
+            html = html.Replace("[LAT]", lat).Replace("[LON]", lon);
+            this.radarMap.NavigateToString(html);
         }
 
 
